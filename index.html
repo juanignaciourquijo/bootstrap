@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>There Be Tygers — Proyecto Interactivo</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts estilo "Ray Bradbury" -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Librería P5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="sketch.js" defer></script>
+</head>
+
+<body>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-light" href="#">There Be Tygers</a>
+            <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-light" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#proceso">Proceso</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#historia-ray">Biografia</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#Historia">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#juego">Juego</a></li>
+                    <li class="nav-item"><a class="nav-link text-light" href="#contacto">Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <section class="carousel-fondo">
+            <div class="carousel-container">
+                <section id="inicio" class="hero">
+
+                    <h1>«There Be Tygers»</h1>
+                    <p>Un proyecto interactivo inspirado en Ray Bradbury</p>
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="tpfinalparte1/data/1.png" alt="Imagen 1">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="tpfinalparte1/data/2.png" alt="Imagen 2">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="tpfinalparte1/data/3.png" alt="Imagen 3">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div id="proceso" class="container text-center mt-5 mb-4 pt-md-5 pt-3" style="max-width: 1200px;">
+                        <h2 class="text-light">Proceso de producción</h2>
+                    </div>
+                    <div class="container mt-4" style="max-width: 1200px;">
+                        <div class="row g-5">
+                            <div class="col-md-6">
+                                <div class="card h-100 custom-card">
+                                    <img src="tpfinalparte1/data/diagrama.png" alt="Imagen izquierda">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Visualiza Nuestro Diagrama</h5>
+                                        <p class="card-text">Diagrama que muestra el proceso de desarrollo de nuestro
+                                            proyecto.</p>
+                                        <a href="https://www.figma.com/board/ZOH5XHLzosnGAmrG0APXsS/Untitled?node-id=0-1&t=oRk71iUe6Rl4RI3N-1"
+                                            class="btn btn-outline-light btn-sm">Ver Diagrama </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 custom-card">
+                                    <img src="tpfinalparte1/data/youtube.png" class="card-img-top" alt="Imagen derecha">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Video Youtube</h5>
+                                        <p class="card-text"> Video explicativo del proyecto donde aclaramos como
+                                            funciona nuestro codigo.</p>
+                                        <a href="https://www.youtube.com/watch?v=51T73uy-2p8"
+                                            class="btn btn-outline-light btn-sm">Ver Video</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+        </section>
+    </div>
+
+    <section id="info-bradbury">
+        <section id="historia-ray" class="section-light">
+            <div class="text-box">
+                <div class="container">
+                    <h2 class="text-center mb-5">Historia Ray Bradbury</h2>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-8 order-md-1 order-2 text-center">
+                            <p>
+                                Ray Bradbury fue un escritor estadounidense fundamental para la consolidación de la
+                                literatura
+                                de ciencia ficción y fantasía del siglo XX. Nació el 22 de agosto de 1920 en Waukegan,
+                                Illinois, y dedicó gran parte de su vida a la escritura de relatos breves, novelas,
+                                poesía y
+                                guiones cinematográficos y televisivos. A diferencia de otros autores del género,
+                                Bradbury
+                                no
+                                se interesaba únicamente por el avance tecnológico, sino por las consecuencias
+                                emocionales,
+                                sociales y éticas que este podía generar en las personas
+                            </p>
+
+                            <p>
+                                En sus obras, la ciencia ficción funciona como una excusa para explorar temas
+                                profundamente
+                                humanos como la libertad, la censura, la memoria, el miedo, la infancia y la pérdida de
+                                la
+                                inocencia. Novelas como <i>Fahrenheit 451</i> (1953) o libros de cuentos como
+                                <i>Crónicas
+                                    marcianas</i> (1950) y <i>El hombre ilustrado</i> (1951) muestran mundos futuristas
+                                que,
+                                en
+                                realidad, funcionan como una crítica a la sociedad contemporánea y a la progresiva
+                                deshumanización provocada por la tecnología, la represión del pensamiento y el abandono
+                                de
+                                la
+                                lectura y la imaginación.
+                            </p>
+
+                            <p>
+                                En los cuentos There Will Come Soft Rains y There Be Tygers, Bradbury utiliza elementos
+                                de
+                                la
+                                naturaleza y figuras simbólicas para representar lo salvaje, lo desconocido y lo
+                                incontrolable.
+                                En este último, el tigre se convierte en una metáfora de la libertad, el peligro y la
+                                imaginación infantil que escapa al control de los adultos. El animal, oculto en un
+                                entorno
+                                aparentemente cotidiano, representa una amenaza, pero también una forma de resistencia
+                                frente a
+                                una sociedad que intenta imponer orden y racionalidad absoluta
+                            </p>
+                            <p>
+                                La infancia ocupa un lugar central en la obra de Bradbury. Para el autor, los niños
+                                poseen
+                                una
+                                conexión más pura con la imaginación y con el mundo fantástico, pero también son los
+                                primeros en
+                                enfrentarse a sus peligros. Esta dualidad entre la inocencia y el riesgo aparece de
+                                manera
+                                constante en sus relatos, generando una tensión entre lo hermoso y lo inquietante, lo
+                                mágico
+                                y
+                                lo mortal.
+                            </p>
+                            <p>
+                                A pesar del paso del tiempo, la obra de Ray Bradbury continúa siendo relevante en la
+                                actualidad,
+                                ya que plantea interrogantes que siguen vigentes: ¿qué sucede cuando una sociedad deja
+                                de
+                                leer?, ¿qué lugar ocupa la creatividad frente al avance desmedido de la tecnología?,
+                                ¿qué
+                                perdemos cuando dejamos de imaginar? Sus textos invitan a reflexionar sobre la
+                                importancia
+                                del
+                                arte, la lectura y la sensibilidad humana en un mundo cada vez más automatizado.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 order-md-2 order-1 mt-4 mt-md-0 text-center">
+                            <img src="tpfinalparte1/data/ray-bradbury-zen.jpg" class="img-fluid rounded shadow-lg"
+                                alt="ray-bradbury-zen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="Historia" class="section-light">
+        <div class="container text-center">
+            <h2 class="text-center mb-5">Resumen de la historia en la que nos inspiramos</h2>
+            <p>
+                Charles, un niño tímido y sensible, va al baño de su escuela y regresa asustado, diciendo que
+                hay un
+                tigre adentro. Nadie le cree: ni sus compañeros, ni los maestros. Todos piensan que está
+                inventando
+                la
+                historia para llamar la atención.
+            <p>
+
+            </p>
+
+            El director, molesto, decide ir él mismo a revisar el baño para demostrar que no hay nada. Entra, y
+            el
+            resto de los alumnos espera afuera escuchando ruidos extraños. El director no vuelve.
+            <p>
+
+            </p>
+
+            Aun así, los adultos siguen sin creerle del todo al niño. Entonces otro profesor decide entrar para
+            “probarlo”. Tampoco regresa.
+            <p>
+
+            </p>
+
+            Los chicos empiezan a asustarse y a darse cuenta de que quizá Charles decía la verdad desde el
+            principio. El cuento mantiene el misterio: el tigre parece existir realmente, pero los adultos, por
+            soberbia e incredulidad, lo subestimaron… y pagaron las consecuencias.
+            <p>
+
+            </p>
+            Finalmente, la escuela se llena de tensión y miedo mientras Charles sigue insistiendo en que él solo
+            trató de advertirlos. El cuento termina con un tono irónico y oscuro, típico de Bradbury, mostrando
+            cómo
+            los adultos pueden ignorar a los niños hasta que es demasiado tarde.
+            </p>
+        </div>
+    </section>
+    </section>
+
+    <!-- JUEGO -->
+    <div class="fondo-doble">
+        <section id="juego">
+            <div class="container">
+                <h2 class="text-center mb-4">Aventura Grafica</h2>
+                <div class="game-container">
+                    <iframe src="tpfinalparte1/index.html" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+
+        <section id="contacto" class="py-5">
+            <div class="container text-center">
+                <div class="presentacion-box">
+                    <h2 class="mb-5">Sobre nosotros y el proyecto</h2>
+                    <p>Trabajo realizado por Juan Ignacio Urquijo y Guadalupe Cuello</p>
+                    <p>Este trabajo de programacion en p5.js (Aventura Grafica) y HTML junto con CSS (Pagina Web), fue
+                        realizado
+                        para cumplir con el TP3 de la materia Programación para medios interactivos orientada a las
+                        tecnologías
+                        web (PMIW), por dos estudiantes de primer año de la carrera de diseño multimedial.
+                    </p>
+                    <p>El trabajo fue realizado con el fin de cumplir las consignas dadas, pero aprovechamos para contar
+                        un poco
+                        sobre el autor del que nos inspiramos y una de sus obras "there be tygers"
+                    <p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-secondary py-4">
+        <small>© Proyecto basado There be Tygers de Ray Bradbury - IPMW 2025</small>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
